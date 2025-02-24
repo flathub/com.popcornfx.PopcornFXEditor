@@ -70,5 +70,6 @@ modules:
       - type: script
         commands:
         - cd /app/pk-editor/bin
+        - export PATH=/app/pk-editor/Resources:$PATH
         - exec ./PK-Editor "$@"
         dest-filename: popcornfx-editor.sh

@@ -60,8 +60,8 @@ modules:
         path: icons/com.popcornfx.PopcornFXEditor.512.png
       - type: archive
         only-arches: [x86_64]
-        url: https://releases.popcornfx.com/2.22.1.23943_714/PopcornFX-Editor_v2.22.1.23943_x64.tgz
-        sha256: dbf81836c3de24c57e9996c1b21adeba9a3184a4f344d8b2fd2862b9a6134878
+        url: https://releases.popcornfx.com/2.22.2.24076_717/PopcornFX-Editor_v2.22.2.24076_x64.tgz
+        sha256: be862d314e5a3f7f0309591b1b7acfd7b04eabf0a97b783ee68600094577d7d4
         strip-components: 0
         x-checker-data:
           type: rotating-url

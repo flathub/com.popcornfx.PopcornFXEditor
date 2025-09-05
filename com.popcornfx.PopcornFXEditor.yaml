@@ -23,8 +23,8 @@ modules:
       - --disable-rpath
     sources:
       - type: archive
-        url: https://kerberos.org/dist/krb5/1.21/krb5-1.21.3.tar.gz
-        sha256: b7a4cd5ead67fb08b980b21abd150ff7217e85ea320c9ed0c6dadd304840ad35
+        url: https://kerberos.org/dist/krb5/1.22/krb5-1.22.1.tar.gz
+        sha256: 1a8832b8cad923ebbf1394f67e2efcf41e3a49f460285a66e35adec8fa0053af
         x-checker-data:
           type: html
           url: https://kerberos.org/dist/
@@ -60,8 +60,8 @@ modules:
         path: icons/com.popcornfx.PopcornFXEditor.512.png
       - type: archive
         only-arches: [x86_64]
-        url: https://releases.popcornfx.com/2.22.2.24076_717/PopcornFX-Editor_v2.22.2.24076_x64.tgz
-        sha256: be862d314e5a3f7f0309591b1b7acfd7b04eabf0a97b783ee68600094577d7d4
+        url: https://releases.popcornfx.com/2.22.3.24401_723/PopcornFX-Editor_v2.22.3.24401_x64.tgz
+        sha256: 62462b103403d8edc78f5c23e4bfb69b6987a5de2b15beed89421f961989af90
         strip-components: 0
         x-checker-data:
           type: rotating-url

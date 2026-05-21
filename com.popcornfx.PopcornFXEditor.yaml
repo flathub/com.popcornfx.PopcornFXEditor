@@ -1,6 +1,6 @@
 app-id: com.popcornfx.PopcornFXEditor
 runtime: org.freedesktop.Platform
-runtime-version: '24.08'
+runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
 command: popcornfx-editor
 tags:
@@ -40,6 +40,27 @@ modules:
       - /share/examples
       - /share/man
 
+  - name: libxml2-2.13
+    buildsystem: autotools
+    config-opts:
+      - --without-python
+      - --without-debug
+      - --without-history
+    cleanup:
+      - /share
+      - /include
+      - /bin
+    sources:
+      - type: archive
+        url: https://download.gnome.org/sources/libxml2/2.13/libxml2-2.13.9.tar.xz
+        sha256: a2c9ae7b770da34860050c309f903221c67830c86e4a7e760692b803df95143a
+        x-checker-data:
+          type: gnome
+          name: libxml2
+          stable-only: true
+          versions:
+            <: '2.14'
+
   - name: popcornfx-editor
     buildsystem: simple
     build-options:
@@ -69,6 +90,6 @@ modules:
           pattern: https://releases.popcornfx.com/([0-9.]+)_
       - type: script
         commands:
-          - cd /app/pk-editor/bin
-          - exec ./PK-Editor "$@"
+        - cd /app/pk-editor/bin
+        - exec ./PK-Editor "$@"
         dest-filename: popcornfx-editor.sh
